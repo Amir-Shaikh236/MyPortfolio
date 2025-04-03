@@ -20,11 +20,3 @@ window.onscroll = () => {
     header.classList.toggle('scr', window.scrollY > 100);
 }
 
-let menu = document.querySelector('#menu');
-let navbar = document.querySelector('.navbar');
-
-// menu.onclick = () => {
-//     menu.classList.toggle('bx-x');
-//     navbar.classList.toggle('active');
-// }
-
