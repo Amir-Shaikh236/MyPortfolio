@@ -9,14 +9,14 @@ const Skills = () => {
         },
         {
             Name: "CSS",
-            skill: "90%",
+            skill: "75%",
         },
         {
             Name: "JavaScript",
-            skill: "90%",
+            skill: "80%",
         },
         {
-            Name: "PHP",
+            Name: "MongoDB",
             skill: "90%",
         },
     ];
@@ -24,20 +24,20 @@ const Skills = () => {
 
     const Lang = [
         {
+            Name: "Express",
+            skill: "50%",
+        },
+        {
+            Name: "React",
+            skill: "50%",
+        },
+        {
+            Name: "Node.js",
+            skill: "50%",
+        },
+        {
             Name: "Python",
-            skill: "90%",
-        },
-        {
-            Name: "Java",
-            skill: "90%",
-        },
-        {
-            Name: "C",
-            skill: "90%",
-        },
-        {
-            Name: "Web Development",
-            skill: "90%",
+            skill: "75%",
         },
     ];
     return (

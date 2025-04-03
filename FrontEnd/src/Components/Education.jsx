@@ -4,24 +4,32 @@ const Education = () => {
 
     const education = [
         {
-            Degree: "Bsc (Computer Science)",
-            Institution_Name: "Abeda Inamdar Senior College",
-            Year: "2021-2024",
+            Degree: " Class 10th",
+            Institution_Name: "Anglo Urdu Boys High School.",
+            description:"Mathematics, Science, English, Social Studies and Participation in school competitions",
+            Percentage:"82.60%",
+            Year: "2019",
+        },
+        {
+            Degree: "Class 12th",
+            Institution_Name: "Anglo Urdu Boys High School.",
+            description:"Physics, Chemistry, Mathematics and Biology.",
+            Percentage:"84.40%",
+            Year: "2021",
         },
         {
             Degree: "Bsc (Computer Science)",
             Institution_Name: "Abeda Inamdar Senior College",
+            description:"Data Structures & Algorithms, Web Development, Database Management, Operating Systems.",
+            Percentage:"86.33%",
             Year: "2021-2024",
         },
         {
-            Degree: "Bsc (Computer Science)",
+            Degree: "Msc (Computer Science)",
             Institution_Name: "Abeda Inamdar Senior College",
-            Year: "2021-2024",
-        },
-        {
-            Degree: "Bsc (Computer Science)",
-            Institution_Name: "Abeda Inamdar Senior College",
-            Year: "2021-2024",
+            description:"PURSUING",
+            Percentage:"----",
+            Year: "2024-2026",
         },
     ];
 
@@ -32,24 +40,24 @@ const Education = () => {
             duration: "2025 For 3 Months.",
             description: "Developed modern web applications using React, MongoDB, Node.js, Express.js",
         },
-        {
-            role: "MERN Stack Developer",
-            company: "Scalefull Technologies",
-            duration: "2025 For 3 Months.",
-            description: "Developed modern web applications using React, MongoDB, Node.js, Express.js",
-        },
-        {
-            role: "MERN Stack Developer",
-            company: "Scalefull Technologies",
-            duration: "2025 For 3 Months.",
-            description: "Developed modern web applications using React, MongoDB, Node.js, Express.js",
-        },
-        {
-            role: "MERN Stack Developer",
-            company: "Scalefull Technologies",
-            duration: "2025 For 3 Months.",
-            description: "Developed modern web applications using React, MongoDB, Node.js, Express.js",
-        },
+        // {
+        //     role: "MERN Stack Developer",
+        //     company: "Scalefull Technologies",
+        //     duration: "2025 For 3 Months.",
+        //     description: "Developed modern web applications using React, MongoDB, Node.js, Express.js",
+        // },
+        // {
+        //     role: "MERN Stack Developer",
+        //     company: "Scalefull Technologies",
+        //     duration: "2025 For 3 Months.",
+        //     description: "Developed modern web applications using React, MongoDB, Node.js, Express.js",
+        // },
+        // {
+        //     role: "MERN Stack Developer",
+        //     company: "Scalefull Technologies",
+        //     duration: "2025 For 3 Months.",
+        //     description: "Developed modern web applications using React, MongoDB, Node.js, Express.js",
+        // },
     ];
 
     return (
@@ -63,10 +71,10 @@ const Education = () => {
                         {education.map((edu, index) => (
                             <div class="education-content" key={index}>
                                 <div class="content">
-                                    <div class="year">{edu.Year}</div>
-                                    <h3>{edu.Degree}</h3>
-                                    {/* <h3>{edu.Institution_Name}</h3> */}
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo odit commodi voluptatem, sunt ratione laborum, mollitia !</p>
+                                    <div class="year">{edu.Year} | {edu.Degree}</div>
+                                    <h3>{edu.Institution_Name}</h3>
+                                    <p>{edu.description}</p>
+                                    <div class="year"> Percentage : {edu.Percentage}</div>
                                 </div>
                             </div>
                         ))}
