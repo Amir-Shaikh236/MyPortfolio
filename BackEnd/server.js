@@ -8,7 +8,12 @@ require("dotenv").config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors({ origin: "https://my-portfolio-eight-theta-75.vercel.app"}));
+app.use(cors({
+    origin: ["https://my-portfolio-eight-theta-75.vercel.app", "http://localhost:5173"],
+    methods: ["GET", "POST"],
+    credentials: true
+}));
+
 app.use(bodyParser.json());
 
 app.post("/send", async (req, res) => {

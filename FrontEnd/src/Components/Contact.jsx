@@ -19,7 +19,11 @@ const Contact = () => {
         setStatus("Sending...");
 
         try {
-            const response = await axios.post("https://myportfolio-mzk6.onrender.com", formData);
+            const response = await axios.post(
+                "https://myportfolio-mzk6.onrender.com/send",
+                formData
+              );
+              
             if (response.data.success) {
                 setStatus("Message sent successfully!");
                 setFormData({ name: "", email: "", message: "" });
