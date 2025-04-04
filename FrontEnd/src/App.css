@@ -261,7 +261,6 @@ section {
   padding: 50px;
   opacity: .7;
   transition: 3s;
-  border: 2px solid red;
 }
 
 .pro-image img:hover {
