@@ -261,6 +261,7 @@ section {
   padding: 50px;
   opacity: .7;
   transition: 3s;
+  border: 2px solid red;
 }
 
 .pro-image img:hover {
@@ -1223,11 +1224,16 @@ i {
   }
 
   html {
-    font-size: 40%;
+    font-size: 58%;
   }
 
   .home-cnt a i {
-    font-size: 80%;
+    font-size: 100%;
+  }
+
+  .animate h3{
+    font-size: 25px;
+    letter-spacing: 1px;
   }
 
   .btn-box {
@@ -1252,11 +1258,18 @@ i {
   }
 
   .home-content p {
-    font-size: 12px;
+    font-size: 22px;
   }
 
   .education-column .title {
-    font-size: 20px;
+    font-size: 28px;
+  }
+
+  .content .year,
+  i {
+    font-size: 1.75rem;
+    color: skyblue;
+    padding-bottom: 5px;
   }
 
   .education-content .content {
@@ -1284,11 +1297,37 @@ i {
   }
 
   .pro-image img {
-    height: 250px;
-    width: 250px;
+    height: 420px;
+    width: 350px;
     border-radius: 50%;
     cursor: pointer;
     padding: 20px;
+    opacity: 1;
+  }
+  .pro-image img:hover {
+    opacity: 1;
+    height: 420px;
+  }
+
+
+  .About{
+    justify-content: flex-start;
+    padding-bottom: 2rem;
+  }
+
+  .about-img{
+    width: 17rem;
+    height: 17rem;
+  }
+
+  .about-content h3{
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+
+  .about-content p{
+    font-size: 17px;
+    text-align: center;
   }
 }
 

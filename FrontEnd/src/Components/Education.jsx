@@ -6,29 +6,29 @@ const Education = () => {
         {
             Degree: " Class 10th",
             Institution_Name: "Anglo Urdu Boys High School.",
-            description:"Mathematics, Science, English, Social Studies and Participation in school competitions",
-            Percentage:"82.60%",
+            description: "Mathematics, Science, English, Social Studies and Participation in school competitions",
+            Percentage: "82.60%",
             Year: "2019",
         },
         {
             Degree: "Class 12th",
             Institution_Name: "Anglo Urdu Boys High School.",
-            description:"Physics, Chemistry, Mathematics and Biology.",
-            Percentage:"84.40%",
+            description: "Physics, Chemistry, Mathematics and Biology.",
+            Percentage: "84.40%",
             Year: "2021",
         },
         {
             Degree: "Bsc (Computer Science)",
             Institution_Name: "Abeda Inamdar Senior College",
-            description:"Data Structures & Algorithms, Web Development, Database Management, Operating Systems.",
-            Percentage:"86.33%",
+            description: "Data Structures & Algorithms, Web Development, Database Management, Operating Systems.",
+            Percentage: "86.33%",
             Year: "2021-2024",
         },
         {
             Degree: "Msc (Computer Science)",
             Institution_Name: "Abeda Inamdar Senior College",
-            description:"PURSUING",
-            Percentage:"----",
+            description: "PURSUING",
+            Percentage: "----",
             Year: "2024-2026",
         },
     ];
@@ -71,7 +71,7 @@ const Education = () => {
                         {education.map((edu, index) => (
                             <div class="education-content" key={index}>
                                 <div class="content">
-                                    <div class="year">{edu.Year} | {edu.Degree}</div>
+                                    <div class="year"> {edu.Year} | {edu.Degree} </div>
                                     <h3>{edu.Institution_Name}</h3>
                                     <p>{edu.description}</p>
                                     <div class="year"> Percentage : {edu.Percentage}</div>
