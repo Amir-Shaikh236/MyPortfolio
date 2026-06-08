@@ -119,9 +119,9 @@ export default function Hero() {
       </div>
 
       {/* Scroll */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+      <div className="absolute bottom-1 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1">
         <span className="text-xs text-white/30 tracking-widest font-mono">SCROLL</span>
-        <div className="w-[1px] h-9 bg-gradient-to-b from-[#C8A96E] to-transparent animate-pulse" />
+        <div className="w-[1px] h-5 bg-gradient-to-b from-[#C8A96E] to-transparent animate-pulse" />
       </div>
 
     </section>
