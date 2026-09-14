@@ -65,13 +65,13 @@ export const skills = {
     "Render"
   ],
 
-  // Testing: [
-  //   "React Testing Library",
-  //   "Vitest",
-  //   "Supertest",
-  //   "PlayWright",
-  //   "Postman"
-  // ],
+  Testing: [
+    // "React Testing Library",
+    // "Vitest",
+    "Supertest",
+    "PlayWright",
+    "Postman"
+  ],
 
   Tools: [
     "Google Gemini API",
