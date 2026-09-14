@@ -12,8 +12,8 @@ export default function Hero() {
       <div className="absolute inset-0 pointer-events-none bg-[linear-gradient(rgba(200,169,110,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(200,169,110,0.04)_1px,transparent_1px)] bg-[size:60px_60px]" />
 
       {/* Glow */}
-      <div className="absolute top-[20%] left-[60%] w-[600px] h-[600px] bg-[radial-gradient(circle,rgba(200,169,110,0.08)_0%,transparent_70%)] -translate-x-1/2 -translate-y-1/2" />
-      <div className="absolute top-[80%] left-[10%] w-[400px] h-[400px] bg-[radial-gradient(circle,rgba(200,169,110,0.05)_0%,transparent_70%)] -translate-x-1/2 -translate-y-1/2" />
+      <div className="absolute pointer-events-none top-[20%] left-[60%] w-[600px] h-[600px] bg-[radial-gradient(circle,rgba(200,169,110,0.08)_0%,transparent_70%)] -translate-x-1/2 -translate-y-1/2" />
+      <div className="absolute pointer-events-none top-[80%] left-[10%] w-[400px] h-[400px] bg-[radial-gradient(circle,rgba(200,169,110,0.05)_0%,transparent_70%)] -translate-x-1/2 -translate-y-1/2" />
 
       <div className="max-w-6xl mx-auto px-6 w-full">
 
@@ -68,7 +68,7 @@ export default function Hero() {
                 { icon: Linkedin, href: personal.linkedin },
                 { icon: ExternalLink, href: personal.portfolio },
               ].map(({ icon: Icon, href }, i) => (
-                <a key={i} href={href} target="_blank" rel="noreferrer"
+                <a key={i} href={href} target="_blank" rel="noopener noreferrer"
                   className="text-white/50 hover:text-[#C8A96E] transition">
                   <Icon size={20} />
                 </a>

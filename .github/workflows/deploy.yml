@@ -1,0 +1,51 @@
+name: Deploy To AWS
+
+on: 
+  push:
+    branches:
+      - main
+
+permissions:
+  id-token: write
+  contents: read
+
+# concurrency:
+#   group: cd-production
+#   cancel-in-progress: false
+
+jobs:
+    Deploy_Portfolio:
+        name: Deploy My Portfolio
+        runs-on: ubuntu-latest
+
+        steps:
+          - name: Checkout Code
+            uses: actions/checkout@v6
+
+          - name: Configure AWS credentials
+            uses: aws-actions/configure-aws-credentials@v5
+            with:
+              aws-region: ap-south-1
+              role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/github-actions-portfolio-role
+              role-session-name: GitHubActionsPortfolioDeployment
+
+          - name: Login to Amazon ECR
+            id: login-ecr
+            uses: aws-actions/amazon-ecr-login@v2
+
+          - name: Generate Image Tag
+            run: echo "IMAGE_TAG=${GITHUB_SHA:0:7}" >> $GITHUB_ENV
+
+          - name: Build and Push Docker Image
+            uses: docker/build-push-action@v6
+            with:
+              context: .
+              push: true
+              tags: |
+                ${{steps.login-ecr.outputs.registry}}/portfolio:${{ env.IMAGE_TAG}}
+                ${{steps.login-ecr.outputs.registry}}/portfolio:latest
+            
+
+          
+  
+          

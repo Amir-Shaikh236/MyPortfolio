@@ -20,7 +20,7 @@ const highlights = [
   {
     icon: Globe,
     title: "Production Deployments",
-    desc: "Shipping apps to Render and Vercel with CI/CD pipelines, Docker, and cloud infrastructure.",
+    desc: "Shipping apps to Azure, Vercel and Render with CI/CD pipelines, Docker, and cloud infrastructure.",
   },
 ];
 
