@@ -10,7 +10,7 @@ import Cursor from "./components/Cursor";
 export default function App() {
   return (
     <div style={{ background: "#0A0A0F", minHeight: "100vh" }}>
-      <Cursor />
+      {/* <Cursor /> */}
       <Navbar />
       <Hero />
       <About />

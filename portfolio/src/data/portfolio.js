@@ -8,7 +8,7 @@ export const personal = {
   location: "Pune, India",
   github: "https://github.com/Amir-Shaikh236",
   linkedin: "https://www.linkedin.com/in/amir-shaikh2410",
-  portfolio: "https://my-portfolio-five-chi-72.vercel.app",
+  portfolio: "https://www.mohammed-amer.me",
 };
 
 export const skills = {
@@ -66,8 +66,8 @@ export const skills = {
   ],
 
   Testing: [
-    // "React Testing Library",
-    // "Vitest",
+    "React Testing Library",
+    "Vitest",
     "Supertest",
     "PlayWright",
     "Postman"
