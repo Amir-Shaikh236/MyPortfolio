@@ -2,7 +2,7 @@ export const personal = {
   name: "Mohammed Amer",
   title: "Full Stack Software Engineer",
   tagline: "Engineering production-ready full-stack systems and restoring broken enterprise applications with zero-fault reliability.",
-  bio: "I am a Software Engineer with nearly 2 years of hands-on experience in full-stack web development debugging, and deploying production-grade applications. Skilled in building secure REST APIs, authentication systems, real- time applications and scalable database solutions using React, Node.js, Express.js, TypeScript, PostgreSQL, and MongoDB. Passionate about clean architecture, application security and delivering reliable software solutions.",
+  bio: "I am a Software Engineer with 1+ years of hands-on experience in full-stack web development debugging, and deploying production-grade applications. Skilled in building secure REST APIs, authentication systems, real- time applications and scalable database solutions using React, Node.js, Express.js, TypeScript, PostgreSQL, and MongoDB. Passionate about clean architecture, application security and delivering reliable software solutions.",
   email: "skamir2410@gmail.com",
   phone: "+91 9604862410",
   location: "Pune, India",
@@ -167,14 +167,28 @@ export const experience = [
     role: "Software Engineer - Full Stack",
     company: "InfoFin Solutions LLP",
     location: "Pune, India",
-    period: "May 2025 – Jun 2026",
-    duration: "14 months", // May 2025 to June 2026 inclusive 
+    period: "July 2026 – Present",
+    duration: "4 months",
     description: "Spearheaded the end-to-end rebuild and production migration of a broken enterprise fintech platform, fixing critical authentication, API routing, and database schema issues.",
     achievements: [
       "Rebuilt a broken enterprise fintech app using React, TypeScript, Node.js, and PostgreSQL, restoring critical auth, routing, and DB configurations. [cite: 23]",
       "Migrated the application into a production-ready monorepo, implementing shared Zod schemas across the frontend and backend for strict end-to-end type safety. [cite: 24]",
       "Configured a Vite reverse proxy to eliminate 404 API errors and restored admin access by reverse-engineering SHA-256+salt hashing and re-seeding via Drizzle ORM. [cite: 25, 26]",
       "Resolved browser-crashing HTML nesting bugs, significantly improving page stability and Lighthouse performance scores. [cite: 27]",
+    ],
+  },
+  {
+    role: "Full-Stack MERN Developer (Intern)",
+    company: "Innovative Staffing Solution",
+    location: "Pune, India",
+    period: "Jan 2026 – June 2026",
+    duration: "6 months",
+    description: "Designed and deployed a secure, full-stack company website featuring a comprehensive content management system, role-based dashboards, and robust authentication middleware.",
+    achievements: [
+      "Built a secure JWT authentication system utilizing HTTP-only cookies and email verification links to eliminate XSS vulnerabilities. [cite: 30]",
+      "Delivered a full Admin Dashboard with CMS features including categories, subpages, a blog engine, role-based user management, and a multi-theme switcher. [cite: 31]",
+      "Fixed Nodemailer SMTP integration to ensure 100% reliable contact form delivery. [cite: 32]",
+      "Audited all Express.js routes to resolve broken middleware and inject missing authentication guards. [cite: 33]",
     ],
   },
   {
@@ -187,20 +201,6 @@ export const experience = [
     achievements: [
       "Built full-stack mini-projects and a responsive house booking platform frontend using React.js and Bootstrap. [cite: 36]",
       "Deepened core JavaScript knowledge and problem-solving skills through intensive technical deep-dives. [cite: 37]",
-    ],
-  },
-  {
-    role: "Full-Stack MERN Developer (Intern)",
-    company: "Innovative Staffing Solution",
-    location: "Pune, India",
-    period: "Jun 2024 – Dec 2024",
-    duration: "7 months", // June 2024 to December 2024 inclusive 
-    description: "Designed and deployed a secure, full-stack company website featuring a comprehensive content management system, role-based dashboards, and robust authentication middleware.",
-    achievements: [
-      "Built a secure JWT authentication system utilizing HTTP-only cookies and email verification links to eliminate XSS vulnerabilities. [cite: 30]",
-      "Delivered a full Admin Dashboard with CMS features including categories, subpages, a blog engine, role-based user management, and a multi-theme switcher. [cite: 31]",
-      "Fixed Nodemailer SMTP integration to ensure 100% reliable contact form delivery. [cite: 32]",
-      "Audited all Express.js routes to resolve broken middleware and inject missing authentication guards. [cite: 33]",
     ],
   },
 ];
@@ -219,3 +219,5 @@ export const education = [
     status: "Completed",
   },
 ];
+
+
