@@ -178,7 +178,7 @@ export const experience = [
     ],
   },
   {
-    role: "Full-Stack MERN Developer (Intern)",
+    role: "Full-Stack Developer (Intern)",
     company: "Innovative Staffing Solution",
     location: "Pune, India",
     period: "Jan 2026 – June 2026",
